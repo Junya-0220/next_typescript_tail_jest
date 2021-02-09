@@ -15,6 +15,15 @@ describe('Navigation by Link', () => {
 
     userEvent.click(screen.getByTestId('blog-nav'))
     expect(await screen.findByText('Blog Page')).toBeInTheDocument()
+    // screen.debug()
+    userEvent.click(screen.getByTestId('comment-nav'))
+    expect(await screen.findByText('Comment Page')).toBeInTheDocument()
+    userEvent.click(screen.getByTestId('context-nav'))
+    expect(await screen.findByText('Context Page')).toBeInTheDocument()
+    userEvent.click(screen.getByTestId('task-nav'))
+    expect(await screen.findByText('Todos Page')).toBeInTheDocument()
+    userEvent.click(screen.getByTestId('home-nav'))
+    expect(await screen.findByText('Welcome to Nextjs')).toBeInTheDocument()
   })
 
 })
