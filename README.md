@@ -2,14 +2,14 @@
 1-1. create-next-app
 
 ```bash
-npx create-next-app . --use-npm
+yarn create-next-app . 
 ```
 
 Node.js version 10.13以降が必要です。 -> ターミナル node -vでver確認出来ます。
 1-2. 必要 module のインストール
 
 ```bash
-npm i axios msw swr
+yarn axios msw swr
 ```
 
 1-3. prettierの設定 : package.json
@@ -106,7 +106,6 @@ export default MyApp
 ```
 
 4. Tailwind CSS の導入
-5. 
 https://tailwindcss.com/docs/guides/nextjs
 
 4-1. 必要moduleのインストール

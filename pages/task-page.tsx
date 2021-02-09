@@ -1,11 +1,11 @@
 import Layout from '../components/Layout'
-const Home: React.FC = () => {
+const TaskPage: React.FC = () => {
   return (
-    <Layout title="Home">
+    <Layout title="Todos">
     <p className="text-4xl">
-      Welcome to Nextjs
+      Todos Page
     </p>
     </Layout>
   )
 }
-export default Home
+export default TaskPage
